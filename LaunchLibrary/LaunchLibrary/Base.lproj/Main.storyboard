@@ -10,11 +10,23 @@
         <!--Launches-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LaunchLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LaunchesViewController" customModule="LaunchLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jmu-OX-hEH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="768"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jmu-OX-hEH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GgW-Th-saO"/>
+                            <constraint firstItem="jmu-OX-hEH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="U7W-GA-cgo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jmu-OX-hEH" secondAttribute="trailing" id="nJc-nb-cqD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jmu-OX-hEH" secondAttribute="bottom" constant="1" id="qpj-sK-gI0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Launches" image="launch" id="GDD-gk-3Ku"/>
@@ -46,7 +58,7 @@
         <!--Rockets-->
         <scene sceneID="80m-gO-6MM">
             <objects>
-                <viewController id="c10-U5-xy9" sceneMemberID="viewController">
+                <viewController id="c10-U5-xy9" customClass="RocketsViewController" customModule="LaunchLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tqf-3Y-af1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,7 +75,7 @@
         <!--Setting-->
         <scene sceneID="Dlc-MQ-Itd">
             <objects>
-                <tableViewController id="yWy-UC-cwo" sceneMemberID="viewController">
+                <tableViewController id="yWy-UC-cwo" customClass="SettingsViewController" customModule="LaunchLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WwD-3W-BOX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
