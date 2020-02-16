@@ -7,7 +7,6 @@ target 'LaunchLibrary' do
 
   # Pods for LaunchLibrary
   pod 'IQKeyboardManagerSwift', '~> 6.5'
-  pod 'Alamofire', '~> 5.0.0-rc.3'
 
   target 'LaunchLibraryTests' do
     inherit! :search_paths

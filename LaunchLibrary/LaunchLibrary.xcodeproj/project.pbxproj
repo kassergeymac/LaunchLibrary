@@ -24,6 +24,10 @@
 		900C61C823EF460A000502DC /* LaunchTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C61C723EF460A000502DC /* LaunchTableCellViewModel.swift */; };
 		900C61CA23EF4990000502DC /* DefaultLaunchTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C61C923EF4990000502DC /* DefaultLaunchTableCellViewModel.swift */; };
 		900C61CE23EF4AE9000502DC /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C61CD23EF4AE9000502DC /* AppError.swift */; };
+		9042F12523F86EBA0054E932 /* RepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042F12423F86EBA0054E932 /* RepositoryProtocol.swift */; };
+		9042F12723F8705D0054E932 /* RocketLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042F12623F8705D0054E932 /* RocketLaunch.swift */; };
+		9042F12A23F879980054E932 /* LaunchLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042F12923F879980054E932 /* LaunchLocation.swift */; };
+		9042F12C23F87A290054E932 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9042F12B23F87A290054E932 /* Rocket.swift */; };
 		9210FF598BC930E960C356D2 /* Pods_LaunchLibraryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4CC6539BD2911A866D1A91 /* Pods_LaunchLibraryTests.framework */; };
 		C7AC22CC8173BBEE71380373 /* Pods_LaunchLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CB939E625B3BD6289BC537 /* Pods_LaunchLibrary.framework */; };
 		FF38AE3475059F6239CB44A7 /* Pods_LaunchLibrary_LaunchLibraryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF01AAEF6076D41910FF8382 /* Pods_LaunchLibrary_LaunchLibraryUITests.framework */; };
@@ -73,6 +77,10 @@
 		900C61C723EF460A000502DC /* LaunchTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableCellViewModel.swift; sourceTree = "<group>"; };
 		900C61C923EF4990000502DC /* DefaultLaunchTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLaunchTableCellViewModel.swift; sourceTree = "<group>"; };
 		900C61CD23EF4AE9000502DC /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		9042F12423F86EBA0054E932 /* RepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocol.swift; sourceTree = "<group>"; };
+		9042F12623F8705D0054E932 /* RocketLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLaunch.swift; sourceTree = "<group>"; };
+		9042F12923F879980054E932 /* LaunchLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchLocation.swift; sourceTree = "<group>"; };
+		9042F12B23F87A290054E932 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
 		98CB939E625B3BD6289BC537 /* Pods_LaunchLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaunchLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA475C803A249644C080EDC /* Pods-LaunchLibraryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaunchLibraryTests.release.xcconfig"; path = "Target Support Files/Pods-LaunchLibraryTests/Pods-LaunchLibraryTests.release.xcconfig"; sourceTree = "<group>"; };
 		CF17D36A2EB5B37EFC9B2453 /* Pods-LaunchLibrary-LaunchLibraryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaunchLibrary-LaunchLibraryUITests.debug.xcconfig"; path = "Target Support Files/Pods-LaunchLibrary-LaunchLibraryUITests/Pods-LaunchLibrary-LaunchLibraryUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +152,7 @@
 		9009367523EEDDEB00632DAB /* LaunchLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				9042F11F23F86D650054E932 /* Infrastracture */,
 				900C61CB23EF4AD1000502DC /* Common */,
 				900C61B823EF352C000502DC /* Rockets */,
 				900C61B723EF3526000502DC /* Setting */,
@@ -228,6 +237,41 @@
 				900C61CD23EF4AE9000502DC /* AppError.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		9042F11F23F86D650054E932 /* Infrastracture */ = {
+			isa = PBXGroup;
+			children = (
+				9042F12823F870690054E932 /* Models */,
+				9042F12023F86D700054E932 /* Repository */,
+			);
+			path = Infrastracture;
+			sourceTree = "<group>";
+		};
+		9042F12023F86D700054E932 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9042F12F23F87B2D0054E932 /* RepositoryTOModel */,
+				9042F12423F86EBA0054E932 /* RepositoryProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9042F12823F870690054E932 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9042F12623F8705D0054E932 /* RocketLaunch.swift */,
+				9042F12923F879980054E932 /* LaunchLocation.swift */,
+				9042F12B23F87A290054E932 /* Rocket.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9042F12F23F87B2D0054E932 /* RepositoryTOModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RepositoryTOModel;
 			sourceTree = "<group>";
 		};
 		B4892E0E2DF5B6335E67A39E /* Pods */ = {
@@ -486,12 +530,16 @@
 				900C61BF23EF35CF000502DC /* RocketsViewController.swift in Sources */,
 				9009367723EEDDEB00632DAB /* AppDelegate.swift in Sources */,
 				900C61CA23EF4990000502DC /* DefaultLaunchTableCellViewModel.swift in Sources */,
+				9042F12C23F87A290054E932 /* Rocket.swift in Sources */,
 				900C61C523EF39F4000502DC /* LaunchTableViewCell.swift in Sources */,
 				9009368123EEDDEB00632DAB /* LaunchLibrary.xcdatamodeld in Sources */,
+				9042F12523F86EBA0054E932 /* RepositoryProtocol.swift in Sources */,
+				9042F12723F8705D0054E932 /* RocketLaunch.swift in Sources */,
 				900C61C123EF36D6000502DC /* LaunchesViewModel.swift in Sources */,
 				900C61BC23EF35AF000502DC /* LaunchesViewController.swift in Sources */,
 				9009367923EEDDEB00632DAB /* SceneDelegate.swift in Sources */,
 				900C61CE23EF4AE9000502DC /* AppError.swift in Sources */,
+				9042F12A23F879980054E932 /* LaunchLocation.swift in Sources */,
 				900C61BA23EF3597000502DC /* SettingsViewController.swift in Sources */,
 				900C61C823EF460A000502DC /* LaunchTableCellViewModel.swift in Sources */,
 			);
